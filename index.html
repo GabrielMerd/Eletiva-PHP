@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletiva Programação WEB</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0062E6, #33AEFF);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 40px;
+            color: #f0f0f0;
+        }
+
+        .menu-wrapper {
+            display: flex;
+            gap: 20px; /* Espaço entre os menus */
+        }
+
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .menu-container ul.submenu {
+            display: block;
+            position: absolute;
+            left: 0;
+            background-color: #007bff;
+            border-radius: 8px;
+            padding: 0;
+            margin-top: 5px;
+            overflow-y: auto;
+            max-height: 200px;
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: height 0.5s ease, opacity 0.5s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .menu-container li:hover ul.submenu {
+            height: 200px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .menu-container ul.submenu li {
+            margin: 0;
+            display: block;
+        }
+
+        a {
+            font-size: 1.2rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            background-color: #007bff;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+            display: block;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 86, 179, 0.3);
+        }
+
+        a:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 6px rgba(0, 86, 179, 0.2);
+        }
+
+        .menu-container ul.submenu::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .menu-container ul.submenu::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+
+        .menu-container ul.submenu::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Eletiva Programação WEB</h1>
+    <h2>Gabriel de Lima Meredija</h2>
+    
+    <div class="menu-wrapper">
+        <div class="menu-container">
+            <ul>
+                <li>
+                    <a href="#">Exercícios da Revisão</a>
+                    <ul class="submenu">
+                        <li><a href="Revisao-gm/ExerciciosdaRevisao/Exercicio01/exer01.php">Exercício 01</a></li>
+                        <li><a href="Revisao-gm/ExerciciosdaRevisao/Exercicio02/exer02.php">Exercício 02</a></li>
+                        <li><a href="Revisao-gm/ExerciciosdaRevisao/Exercicio03/exer03.php">Exercício 03</a></li>
+                        <li><a href="Revisao-gm/ExerciciosdaRevisao/Exercicio04/exer04.php">Exercício 04</a></li>
+                        <li><a href="Revisao-gm/ExerciciosdaRevisao/Exercicio05/exer05.php">Exercício 05</a></li>
+                        <li><a href="Revisao-gm/ExerciciosdaRevisao/Exercicio06/exer06.php">Exercício 06</a></li>
+                        <li><a href="Revisao-gm/ExerciciosdaRevisao/Exercicio07/exer07.php">Exercício 07</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-container">
+            <ul>
+                <li>
+                    <a href="#">Exercícios da Lista 2</a>
+                    <ul class="submenu">
+                        <li><a href="Exercicios-da-aula/Lista2/Exercicio01/exer01.php">Exercício 01</a></li>
+                        <li><a href="Exercicios-da-aula/Lista2/Exercicio02/exer02.php">Exercício 02</a></li>
+                        <li><a href="Exercicios-da-aula/Lista2/Exercicio03/exer03.php">Exercício 03</a></li>
+                
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Adicione mais containers de menu conforme necessário (Visto: 25/08) gm-->
+    </div>
+
+</body>
+</html>
